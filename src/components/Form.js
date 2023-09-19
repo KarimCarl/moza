@@ -1,9 +1,8 @@
-import React, { PureComponent } from 'react'
+import React from 'react'
 // import { useState } from 'react'
 
 
-export class form extends PureComponent {
-  render() {
+function form() {
 
     return (
       <>
@@ -49,7 +48,6 @@ export class form extends PureComponent {
 
       </>
     )
-  }
 }
 
 export default form
