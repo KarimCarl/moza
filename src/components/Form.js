@@ -6,7 +6,20 @@ export class form extends PureComponent {
   render() {
 
     return (
-      
+      <>
+        <div>
+          <form className='new-item-form'>
+              <div className='form-row'>
+                  <label>New Item: </label>
+                  <input type='text' id="item"/>
+              </div>
+              <button className='btn' type='Submit'>Add</button>
+          </form>
+        </div>
+
+
+
+      </>
     )
   }
 }
