@@ -1,8 +1,14 @@
-import React from 'react'
+import React, {useState} from 'react'
 // import { useState } from 'react'
 
 
-function form() {
+function Form() {
+
+  // Use state hooks up the current state to where we should affect the code, in this case
+  //in the text input area
+  //newItem is the value of our thing (todo task)
+  //setNewItem is a function of updating our value
+    const [newItem, setNewItem] = useState("")
 
     return (
       <>
@@ -50,5 +56,5 @@ function form() {
     )
 }
 
-export default form
+export default Form
 // exports this file so it can be imported by files dependent on it
