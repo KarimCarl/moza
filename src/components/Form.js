@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 // import { useState } from 'react'
 
-
 function Form() {
 
   // Use state hooks up the current state to where we should affect the code, in this case
@@ -10,13 +9,16 @@ function Form() {
   //setNewItem is a function of updating our value
     const [newItem, setNewItem] = useState("")
 
+    // setNewItem("Todo task One")
+
+
     return (
       <>
         <div>
           <form className='new-item-form'>
               <div className='form-row'>
                   <label>New Item: </label>
-                  <input type='text' id="item"/>
+                  <input value={newItem} onChange={e => setNewItem(e.target.value)} type='text' id="item"/>
               </div>
               <button className='btn' type='Submit'>Add</button>
           </form>
